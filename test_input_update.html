@@ -1,0 +1,21 @@
+<head>
+  <title>test_input_update</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <h1>try to write and change different positions</h1>
+    {{#with greeting}}
+    keyup
+        <input type="text" style="width:500px" class="keyup" value="{{mytext}}">
+    <br>
+    keydown
+        <input type="text" class="keydown" style="width:500px" value="{{mytext}}">
+    {{/with}}
+</template>
+
+
+
